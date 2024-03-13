@@ -6,7 +6,7 @@
 /*   By: hkumbhan <hkumbhan@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 17:52:22 by fgabler           #+#    #+#             */
-/*   Updated: 2024/03/13 20:20:00 by hkumbhan         ###   ########.fr       */
+/*   Updated: 2024/03/13 22:27:50 by hkumbhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ int	main(int ac, char **av)
 		if (launch_game(&cub3d) == EXIT_FAILURE)
 			free_execution(&cub3d, EXIT_FAILURE);
 	}
+
 	system("killall afplay");
 	free_structs(&game, &parser);
 	return (0);
